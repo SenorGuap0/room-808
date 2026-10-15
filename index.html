@@ -1,119 +1,166 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#0a0a0a" />
-  <meta name="description" content="ROOM 808 — a fictional Atlanta recording studio concept. Explore rooms, producers, sessions and ECHO, the studio concierge." />
-  <title>ROOM 808 — Atlanta Recording Studios</title>
-  <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./styles.css" />
-  <script defer src="./app.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#e6e2d6">
+<meta name="description" content="ROOM 808. An imagined independent Atlanta recording studio. Find a room, meet the roster, and make your next record.">
+<title>ROOM 808 / ATLANTA RECORDING STUDIO</title>
+<link rel="icon" type="image/svg+xml" href="./favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./styles.css">
+<script defer src="./app.js"></script>
 </head>
 <body>
-  <div class="ambient ambient-one" aria-hidden="true"></div>
-  <div class="ambient ambient-two" aria-hidden="true"></div>
-  <div class="topbar"><span class="live-dot"></span> INDEPENDENT SOUND. ATLANTA, GA. <span class="topbar-right">STUDIO CONCEPT / EST. 2026</span></div>
-  <header class="header" id="header">
-    <a href="#home" class="logo" aria-label="ROOM 808 Home"><span class="brand-icon">R<span>⁄</span>8</span><span class="brand-word">ROOM<span class="brand-red">808</span><small>RECORDING STUDIOS</small></span></a>
-    <button class="mobile-toggle" id="menuToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle navigation">☰</button>
-    <nav class="nav" id="primaryNav" aria-label="Main navigation">
-      <a href="#home" data-nav="home" class="active">HOME</a>
-      <a href="#studios" data-nav="studios">STUDIOS</a>
-      <a href="#producers" data-nav="producers">PRODUCERS</a>
-      <a href="#services" data-nav="services">SERVICES</a>
-      <a href="#radio" data-nav="radio">808 RADIO</a>
-      <a href="#echo" data-nav="echo">ECHO AI <span class="small-spark">✦</span></a>
-      <a href="#about" data-nav="about">ABOUT</a>
+<div class="site-grid">
+  <aside class="rail" id="rail">
+    <div class="rail-header">
+      <a href="#home" class="rail-logo" aria-label="ROOM 808 home"><span class="rail-star">✳</span><span>ROOM<br><strong>808</strong></span></a>
+      <button class="mobile-toggle" id="menuToggle" aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle site sections">☰</button>
+      <div class="rail-notation">INDEPENDENT AUDIO SPACE<br>ATLANTA, GA · EST. '26</div>
+    </div>
+    <div class="catalogue-label"><span>INDEX / 01—08</span><span>↘</span></div>
+    <nav id="primaryNav" class="nav" aria-label="Main navigation">
+      <a href="#home" data-nav="home" class="active"><small>01</small><span>THE FRONT</span><b>↗</b></a>
+      <a href="#studios" data-nav="studios"><small>02</small><span>THE ROOMS</span><b>↗</b></a>
+      <a href="#producers" data-nav="producers"><small>03</small><span>THE ROSTER</span><b>↗</b></a>
+      <a href="#services" data-nav="services"><small>04</small><span>THE WORK</span><b>↗</b></a>
+      <a href="#radio" data-nav="radio"><small>05</small><span>808 RADIO</span><b>↗</b></a>
+      <a href="#echo" data-nav="echo"><small>06</small><span>ASK ECHO</span><b>↗</b></a>
+      <a href="#about" data-nav="about"><small>07</small><span>OUR STORY</span><b>↗</b></a>
+      <a href="#booking" data-nav="booking" class="nav-book"><small>08</small><span>BOOK A SESSION</span><b>↗</b></a>
     </nav>
-    <a href="#booking" class="nav-book" data-nav="booking">BOOK SESSION <span>↗</span></a>
-  </header>
-  <main id="main">
-    <section class="page active" id="home" aria-labelledby="heroTitle">
-      <div class="hero">
-        <div class="hero-photo" role="img" aria-label="Professional recording console with atmospheric studio lighting"></div>
-        <div class="hero-noise"></div>
-        <div class="hero-inner shell">
-          <div class="hero-copy">
-            <p class="eyebrow"><span class="dash"></span> ATLANTA'S NEXT CREATIVE FREQUENCY</p>
-            <h1 id="heroTitle">THIS IS<br>YOUR <span>808.</span></h1>
-            <p class="hero-description">No distractions. No limits. Just you, your sound, and the room that brings it to life.</p>
-            <div class="hero-buttons"><a class="btn btn-red" href="#booking">BOOK YOUR SESSION <span>↗</span></a><a class="btn btn-ghost" href="#studios">EXPLORE THE ROOMS <span>→</span></a></div>
+    <div class="rail-bottom"><div class="rail-pulse"><span class="pulse-dot"></span> IDEAS IN SESSION</div><span class="rail-vertical">NOT A REAL STUDIO · CONCEPT PROJECT</span></div>
+  </aside>
+
+  <div class="stage">
+    <div class="utility"><span><i class="rec-dot"></i> ROOM 808 <span class="utility-slash">/</span> EST. ATLANTA, GA</span><span class="utility-right">CREATED FOR THE CULTURE, NOT THE ALGORITHM <b>✳</b></span></div>
+    <main id="main">
+      <section class="page active" id="home" aria-labelledby="heroTitle">
+        <div class="cover-page">
+          <div class="edition"><span>ISSUE NO. 001</span><span>EVERY SOUND HAS A STARTING POINT.</span><span>33°44′56″N</span></div>
+          <div class="cover-grid">
+            <div class="cover-type">
+              <span class="small-caps cover-kicker">ATLANTA / RECORDING / CREATIVE ROOMS</span>
+              <h1 id="heroTitle">ROOM<br><span>8<span class="tilt-zero">0</span>8</span><sup>®</sup></h1>
+              <div class="cover-intro"><div class="asterisk">✳</div><p>COME WITH AN IDEA.<br><em>LEAVE WITH A RECORD.</em></p></div>
+              <a class="slab-button" href="#booking"><span>GET IN THE ROOM</span><b>↗</b></a>
+            </div>
+            <figure class="cover-photo">
+              <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1600&q=85" alt="Studio console and recording equipment">
+              <span class="photo-corner">A / SIDE ONE</span>
+              <span class="photocopy-stamp" aria-hidden="true">NO<br>SKIPS.</span>
+              <figcaption>001 — THE ROOM BEFORE THE RECORD.</figcaption>
+            </figure>
           </div>
-          <div class="hero-aside"><div class="hero-aside-top"><span>01 / 03</span><span class="signal">● SIGNAL LIVE</span></div><p>THE CITY NEVER<br>STOPS CREATING.</p><div class="equalizer" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="aside-footer">YOUR NEXT RECORD STARTS HERE <span>↗</span></div></div>
+          <div class="cover-bottom"><span>NO FORMULA / NO FIXED SOUND</span><span>GOOD MUSIC NEEDS ROOM TO HAPPEN.</span><span>SCROLL ↓</span></div>
         </div>
-        <div class="hero-bottom shell"><span>33.7490° N / 84.3880° W</span><span>SCROLL TO DISCOVER ↓</span><span>ROOM 808 // ATL</span></div>
-      </div>
-      <div class="marquee" aria-hidden="true"><div class="marquee-content">RECORD DIFFERENT <b>✳</b> CREATE LOUDER <b>✳</b> STAY ORIGINAL <b>✳</b> RECORD DIFFERENT <b>✳</b> CREATE LOUDER <b>✳</b> STAY ORIGINAL <b>✳</b></div></div>
-      <div class="shell homepage-section">
-        <div class="section-heading"><div><p class="eyebrow">// THE ROOM 808 EXPERIENCE</p><h2>BUILT FOR THE<br><em>WAY YOU CREATE.</em></h2></div><p class="section-aside">For the late nights, first takes, breakthroughs, and records the world hasn't heard yet.</p></div>
-        <div class="feature-grid">
-          <a href="#studios" class="feature-card feature-photo"><div class="feature-image img-control"></div><span class="feature-index">01 / STUDIOS</span><div class="feature-bottom"><h3>FIND YOUR SPACE.</h3><span class="circle-arrow">↗</span></div></a>
-          <a href="#producers" class="feature-card"><div class="feature-pattern" aria-hidden="true"><span>808</span><i></i></div><span class="feature-index">02 / PEOPLE</span><div class="feature-bottom"><h3>MEET YOUR SOUND.</h3><span class="circle-arrow">↗</span></div></a>
-          <a href="#echo" class="feature-card feature-ai"><div class="feature-orb" aria-hidden="true"></div><span class="feature-index">03 / ECHO CONCIERGE</span><div class="feature-bottom"><h3>ASK. PLAN. CREATE.</h3><span class="circle-arrow">↗</span></div></a>
+        <div class="black-belt" aria-hidden="true"><div class="belt-track">TAKE ONE ✳ TAKE TWO ✳ MAKE IT COUNT ✳ ROOM 808 ✳ THE CITY HAS A SOUND ✳ TAKE ONE ✳ TAKE TWO ✳ MAKE IT COUNT ✳ ROOM 808 ✳</div></div>
+        <div class="index-section">
+          <div class="section-label"><span>WHAT'S INSIDE</span><span>02—08 / DEPARTMENTS</span></div>
+          <div class="index-intro"><h2>THE WHOLE<br><em>PROCESS.</em></h2><p>A room to create. Someone to bounce ideas off. Time to figure it out. Everything starts somewhere.</p></div>
+          <div class="issue-index">
+            <a href="#studios"><span class="issue-no">02 / THE SPACE</span><strong>THREE ROOMS.<br>ZERO EXPECTATIONS.</strong><span class="index-arrow">↗</span></a>
+            <a href="#producers"><span class="issue-no">03 / THE PEOPLE</span><strong>FIND YOUR<br>OTHER HALF.</strong><span class="index-arrow">↗</span></a>
+            <a href="#radio"><span class="issue-no">05 / THE SOUND</span><strong>PLAY SOMETHING<br>LOUD.</strong><span class="index-arrow">↗</span></a>
+            <a href="#echo"><span class="issue-no">06 / THE ASSISTANT</span><strong>GOT QUESTIONS?<br>ASK ECHO.</strong><span class="index-arrow">↗</span></a>
+          </div>
         </div>
-      </div>
-      <div class="statement"><div class="shell statement-content"><span class="eyebrow">THE MANIFESTO / 808</span><p>GOOD MUSIC NEEDS<br><strong>SPACE TO HAPPEN.</strong></p><a href="#booking" class="btn btn-outline-white">FIND YOUR SESSION ↗</a></div></div>
-      <div class="shell homepage-section home-bottom"><div><p class="eyebrow">THE NEXT MOVE IS YOURS</p><h2>MAKE THE<br><span class="text-red">FIRST TAKE.</span></h2></div><div><p>Whether you're tracking your debut or your tenth tape, we've got a room with your name on it.</p><a class="btn btn-red" href="#booking">RESERVE A ROOM <span>↗</span></a></div></div>
-    </section>
+        <div class="home-poster"><div class="poster-meta"><span>ROOM 808 · STUDIO MANIFESTO</span><span>ONE TAKE AT A TIME ↗</span></div><p>THE CITY<br>DOESN'T<br><em>WAIT.</em></p><a href="#booking">NEITHER SHOULD YOUR NEXT SONG <b>↗</b></a><div class="poster-star">✳</div></div>
+      </section>
 
-    <section class="page" id="studios" aria-labelledby="studiosTitle">
-      <div class="interior-hero shell"><p class="eyebrow">01 / THE SPACES</p><h1 id="studiosTitle">YOUR SPACE.<br><span>YOUR SOUND.</span></h1><p>Three rooms. Three distinct energies. One place to make something undeniable.</p></div>
-      <div class="shell rooms-grid">
-        <article class="room-card"><div class="room-media room-media-a"><span class="room-label">ROOM / A</span></div><div class="room-info"><div><p class="eyebrow">FLAGSHIP CONTROL ROOM</p><h2>THE RED ROOM.</h2><p>Built for full sessions, vocal production, and loud ideas. Our signature studio experience.</p></div><div class="equipment">SSL-inspired workflow <span>•</span> Pro vocal chain <span>•</span> Lounge access</div><div class="room-foot"><div><strong>$90</strong><span>/ HOUR · ENGINEER INCLUDED</span></div><button class="btn btn-red room-quick-book" data-room="red">BOOK ROOM A ↗</button></div></div></article>
-        <article class="room-card"><div class="room-media room-media-b"><span class="room-label">ROOM / B</span></div><div class="room-info"><div><p class="eyebrow">VOCAL PRODUCTION SUITE</p><h2>THE BOOTH.</h2><p>Dial in, lock out the noise, and get the take. An intimate room made for pure focus.</p></div><div class="equipment">Treated vocal booth <span>•</span> Quick setup <span>•</span> 1–3 artists</div><div class="room-foot"><div><strong>$60</strong><span>/ HOUR · ENGINEER INCLUDED</span></div><button class="btn btn-red room-quick-book" data-room="booth">BOOK ROOM B ↗</button></div></div></article>
-        <article class="room-card"><div class="room-media room-media-c"><span class="room-label">ROOM / C</span></div><div class="room-info"><div><p class="eyebrow">PREMIUM CREATIVE SUITE</p><h2>THE PENTHOUSE.</h2><p>More room for your team, more room for ideas. Designed for writing camps and all-night sessions.</p></div><div class="equipment">Spacious control room <span>•</span> Writing lounge <span>•</span> 1–8 artists</div><div class="room-foot"><div><strong>$125</strong><span>/ HOUR · ENGINEER INCLUDED</span></div><button class="btn btn-red room-quick-book" data-room="penthouse">BOOK ROOM C ↗</button></div></div></article>
-      </div>
-      <div class="shell strip-note"><span>EVERY ROOM COMES READY.</span><p>Professional equipment, dedicated engineering, and an atmosphere made for creating. Rooms and rates shown are part of a fictional studio concept.</p></div>
-    </section>
+      <section class="page" id="studios" aria-labelledby="studiosTitle">
+        <header class="page-masthead"><div class="masthead-meta"><span>02 / STUDIO DIRECTORY</span><span>OPEN THE DOOR ↗</span></div><h1 id="studiosTitle">PICK A<br><em>ROOM.</em></h1><p>Three different moods. Same intention: get the take. Pick your environment, bring your people, and make something yours.</p></header>
+        <div class="rooms-directory">
+          <article class="room-spread">
+            <div class="room-visual visual-red"><img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1200&q=85" alt="Recording console inside a professional studio"><span class="visual-tape">SIDE A / FLAGSHIP</span><span class="big-room-no">A</span></div>
+            <div class="room-sheet"><div class="sheet-header"><span>STUDIO SHEET / 001</span><span>ATL · ROOM A</span></div><div><span class="small-caps">01 / THE CONTROL ROOM</span><h2>THE RED<br><em>ROOM.</em></h2><p>The loud ideas go here. A full control room for vocals, tracking, and sessions that turn into something else.</p></div><div class="sheet-details"><span>PRO VOCAL CHAIN</span><span>CONTROL ROOM</span><span>LOUNGE ACCESS</span></div><div class="sheet-bottom"><div><strong>$90</strong><small>/ HOUR<br>ENGINEER INCLUDED</small></div><button type="button" class="room-quick-book tape-button" data-room="red">HOLD ROOM A ↗</button></div></div>
+          </article>
+          <article class="room-spread room-spread-reverse">
+            <div class="room-visual visual-booth"><img src="https://images.unsplash.com/photo-1516280440614-37939d6bbacd?auto=format&fit=crop&w=1200&q=85" alt="Microphone in a recording environment"><span class="visual-tape">SIDE B / VOCAL BOOTH</span><span class="big-room-no">B</span></div>
+            <div class="room-sheet"><div class="sheet-header"><span>STUDIO SHEET / 002</span><span>ATL · ROOM B</span></div><div><span class="small-caps">02 / THE FOCUS ROOM</span><h2>THE<br><em>BOOTH.</em></h2><p>Headphones on. World off. A stripped-back vocal suite for turning rough ideas into real takes.</p></div><div class="sheet-details"><span>TREATED BOOTH</span><span>QUICK SETUP</span><span>1—3 ARTISTS</span></div><div class="sheet-bottom"><div><strong>$60</strong><small>/ HOUR<br>ENGINEER INCLUDED</small></div><button type="button" class="room-quick-book tape-button" data-room="booth">HOLD ROOM B ↗</button></div></div>
+          </article>
+          <article class="room-spread">
+            <div class="room-visual visual-penthouse"><img src="https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?auto=format&fit=crop&w=1200&q=85" alt="Music performance and creative atmosphere"><span class="visual-tape">SIDE C / CREATIVE SUITE</span><span class="big-room-no">C</span></div>
+            <div class="room-sheet"><div class="sheet-header"><span>STUDIO SHEET / 003</span><span>ATL · ROOM C</span></div><div><span class="small-caps">03 / THE WHOLE CREW</span><h2>THE<br><em>PENTHOUSE.</em></h2><p>Bring the whole room to life. More space for writing camps, co-creation, and the long nights.</p></div><div class="sheet-details"><span>WRITING LOUNGE</span><span>GROUP SESSIONS</span><span>UP TO 8 PEOPLE</span></div><div class="sheet-bottom"><div><strong>$125</strong><small>/ HOUR<br>ENGINEER INCLUDED</small></div><button type="button" class="room-quick-book tape-button" data-room="penthouse">HOLD ROOM C ↗</button></div></div>
+          </article>
+        </div>
+        <div class="inline-disclaimer">ROOMS AND RATES ARE PART OF A FICTIONAL STUDIO CONCEPT. NO REAL STUDIO IS BOOKABLE.</div>
+      </section>
 
-    <section class="page" id="producers" aria-labelledby="producersTitle">
-      <div class="interior-hero shell"><p class="eyebrow">02 / THE PEOPLE</p><h1 id="producersTitle">MEET THE<br><span>ARCHITECTS.</span></h1><p>Different perspectives. One obsession: making records that hit different.</p></div>
-      <div class="shell people-grid">
-        <article class="person-card"><div class="person-art art-vice"><div class="person-monogram">KV<span>✳</span></div><span class="art-tag">ATL / TRAP</span></div><div class="person-details"><p class="eyebrow">PRODUCER / 001</p><h2>KAI VICE</h2><p>Distorted drums. Cinematic tension. Heavy low end. For the artist who wants the speakers to shake.</p><div class="tag-row"><span>TRAP</span><span>RAGE</span><span>808S</span></div><button data-producer="kai" class="text-link producer-book">BOOK WITH KAI ↗</button></div></article>
-        <article class="person-card"><div class="person-art art-nova"><div class="person-monogram">NB<span>◌</span></div><span class="art-tag">ATL / R&B</span></div><div class="person-details"><p class="eyebrow">PRODUCER / 002</p><h2>NOVA BLU</h2><p>After-dark melodies, spacious textures, and vocals that sit exactly where they should.</p><div class="tag-row"><span>R&B</span><span>ALT SOUL</span><span>MELODIC</span></div><button data-producer="nova" class="text-link producer-book">BOOK WITH NOVA ↗</button></div></article>
-        <article class="person-card"><div class="person-art art-mars"><div class="person-monogram">M8<span>↗</span></div><span class="art-tag">ATL / EXPERIMENTAL</span></div><div class="person-details"><p class="eyebrow">PRODUCER / 003</p><h2>MARS 808</h2><p>Forward-thinking arrangements, left-field samples, and an ear for the unexpected.</p><div class="tag-row"><span>HIP-HOP</span><span>EXPERIMENTAL</span><span>BEATS</span></div><button data-producer="mars" class="text-link producer-book">BOOK WITH MARS ↗</button></div></article>
-        <article class="person-card"><div class="person-art art-juno"><div class="person-monogram">JR<span>✦</span></div><span class="art-tag">ATL / ENGINEERING</span></div><div class="person-details"><p class="eyebrow">ENGINEER / 004</p><h2>JUNO RAE</h2><p>Clean vocals. Detail-first mixing. The precision that turns a good take into a finished record.</p><div class="tag-row"><span>ENGINEERING</span><span>MIXING</span><span>VOCALS</span></div><button data-producer="juno" class="text-link producer-book">BOOK WITH JUNO ↗</button></div></article>
-      </div>
-      <div class="shell disclaimer">All producer names, profiles, and portfolios above are fictional characters created for this website concept.</div>
-    </section>
+      <section class="page" id="producers" aria-labelledby="producersTitle">
+        <header class="page-masthead"><div class="masthead-meta"><span>03 / THE ROSTER</span><span>FOUR POINTS OF VIEW</span></div><h1 id="producersTitle">THE PEOPLE<br><em>BEHIND IT.</em></h1><p>Every record has fingerprints. Find the creative mind that gets what you're trying to say.</p></header>
+        <div class="roster">
+          <article class="roster-row"><div class="roster-portrait portrait-kai"><span>KV</span><small>808 / 001</small></div><div class="roster-body"><div class="roster-meta"><span>PRODUCER / HEAVY SOUND</span><span>001</span></div><h2>KAI<br>VICE<span>↗</span></h2><p>Heavy drums, bent melodies, no soft landings. The sound is built to shake the room.</p><div class="roster-actions"><span>TRAP · RAGE · 808s</span><button type="button" class="producer-book underline-button" data-producer="kai">SESSION WITH KAI ↗</button></div></div></article>
+          <article class="roster-row"><div class="roster-portrait portrait-nova"><span>NB</span><small>808 / 002</small></div><div class="roster-body"><div class="roster-meta"><span>PRODUCER / AFTER HOURS</span><span>002</span></div><h2>NOVA<br>BLU<span>↗</span></h2><p>Slow-burn melodies and headspace for a voice to live in. Make the room feel like 2 a.m.</p><div class="roster-actions"><span>R&B · SOUL · MELODIC</span><button type="button" class="producer-book underline-button" data-producer="nova">SESSION WITH NOVA ↗</button></div></div></article>
+          <article class="roster-row"><div class="roster-portrait portrait-mars"><span>M8</span><small>808 / 003</small></div><div class="roster-body"><div class="roster-meta"><span>PRODUCER / LEFT OF CENTER</span><span>003</span></div><h2>MARS<br>808<span>↗</span></h2><p>Unexpected samples and warped rhythms. For the track that isn't supposed to fit a category.</p><div class="roster-actions"><span>ALT RAP · BEATS · EXPERIMENTAL</span><button type="button" class="producer-book underline-button" data-producer="mars">SESSION WITH MARS ↗</button></div></div></article>
+          <article class="roster-row"><div class="roster-portrait portrait-juno"><span>JR</span><small>808 / 004</small></div><div class="roster-body"><div class="roster-meta"><span>ENGINEER / THE DETAILS</span><span>004</span></div><h2>JUNO<br>RAE<span>↗</span></h2><p>Get every word in focus. Clean vocal production, close listening, and the extra 10 percent.</p><div class="roster-actions"><span>ENGINEERING · MIXING · VOCALS</span><button type="button" class="producer-book underline-button" data-producer="juno">SESSION WITH JUNO ↗</button></div></div></article>
+        </div>
+        <div class="inline-disclaimer">MEET THE CAST, NOT A REAL CREDIT LIST. ALL FOUR PROFILES ARE FICTIONAL.</div>
+      </section>
 
-    <section class="page" id="services" aria-labelledby="servicesTitle">
-      <div class="interior-hero shell"><p class="eyebrow">03 / THE OFFERING</p><h1 id="servicesTitle">FROM IDEA<br><span>TO MASTER.</span></h1><p>Whatever stage you're at, there's a way to make the next record better.</p></div>
-      <div class="shell service-grid">
-        <article class="service-card service-primary"><span class="service-number">01 / RECORDING</span><div class="service-icon">◉</div><h2>RECORDING<br>SESSIONS</h2><p>Room, engineer, and everything you need to get the perfect take.</p><div class="service-price">FROM <strong>$60<small>/HR</small></strong></div><a href="#booking" class="btn btn-ghost">BOOK NOW ↗</a></article>
-        <article class="service-card"><span class="service-number">02 / POST PRODUCTION</span><div class="service-icon">≋</div><h2>MIXING &<br>MASTERING</h2><p>Bring clarity, punch, and polish to tracks you've already recorded.</p><div class="service-price">FROM <strong>$100<small>/TRACK</small></strong></div><a href="#echo" class="btn btn-ghost">ASK ECHO ↗</a></article>
-        <article class="service-card"><span class="service-number">03 / COLLABORATION</span><div class="service-icon">✳</div><h2>PRODUCER<br>SESSIONS</h2><p>Make a record from scratch with one of the ROOM 808 creatives.</p><div class="service-price">FROM <strong>$45<small>/HR ADD-ON</small></strong></div><a href="#producers" class="btn btn-ghost">MEET THE TEAM ↗</a></article>
-        <article class="service-card"><span class="service-number">04 / CREATIVE DIRECTION</span><div class="service-icon">↗</div><h2>ARTIST<br>DEVELOPMENT</h2><p>Focused production, arrangement, writing, and creative direction.</p><div class="service-price">CUSTOM <strong>QUOTE</strong></div><a href="#echo" class="btn btn-ghost">PLAN A PROJECT ↗</a></article>
-      </div>
-      <div class="shell packages"><div><p class="eyebrow">BUILT FOR YOUR SCHEDULE</p><h2>NEED MORE<br>TIME IN THE ROOM?</h2></div><p>Try a 4-hour or 6-hour booking. Your room rate and optional producer add-on calculate automatically when you reserve.</p><a href="#booking" class="btn btn-red">BUILD YOUR SESSION ↗</a></div>
-    </section>
+      <section class="page" id="services" aria-labelledby="servicesTitle">
+        <header class="page-masthead"><div class="masthead-meta"><span>04 / STUDIO SERVICES</span><span>THE WHOLE PROCESS</span></div><h1 id="servicesTitle">MAKE IT.<br><em>FINISH IT.</em></h1><p>From the first voice memo to the final bounce, the work takes time. Here's where we come in.</p></header>
+        <div class="services-sheet">
+          <div class="services-top"><span>MENU / NO. 808</span><span>ALL PRICES ARE ILLUSTRATIVE</span></div>
+          <div class="service-line"><span class="service-number">01</span><div><h2>RECORDING</h2><p>Track vocals or instruments with an engineer and a room that stays out of your way.</p></div><span class="service-price">FROM $60/HR</span></div>
+          <div class="service-line"><span class="service-number">02</span><div><h2>PRODUCTION</h2><p>Make the beat with someone who knows where your sound is headed.</p></div><span class="service-price">FROM +$45/HR</span></div>
+          <div class="service-line"><span class="service-number">03</span><div><h2>MIX & MASTER</h2><p>Give the details their time. Clarity, impact, and a finished version you can play back.</p></div><span class="service-price">FROM $100/TRACK</span></div>
+          <div class="service-line"><span class="service-number">04</span><div><h2>WRITING SESSIONS</h2><p>A little more room to experiment. Bring the people who make the ideas better.</p></div><span class="service-price">CUSTOM</span></div>
+        </div>
+        <div class="service-foot"><div><span class="small-caps">A NOTE FROM THE CONTROL ROOM</span><h3>DON'T KNOW WHAT<br>YOU NEED <em>YET?</em></h3></div><a class="tape-button" href="#echo">ASK ECHO FOR A PLAN ↗</a></div>
+      </section>
 
-    <section class="page" id="radio" aria-labelledby="radioTitle">
-      <div class="interior-hero shell"><p class="eyebrow">04 / THE FREQUENCY</p><h1 id="radioTitle">TUNE INTO<br><span>808 RADIO.</span></h1><p>Sounds from inside the concept. Press play and catch a little of the ROOM 808 energy.</p></div>
-      <div class="shell radio-feature"><div class="radio-graphic"><div class="radio-vinyl"><div class="vinyl-inner">808</div></div><span class="radio-side-text">FREQUENCY / 0808</span></div><div class="radio-copy"><p class="eyebrow"><span class="live-dot"></span> NOW TRANSMITTING / IN-BROWSER DEMO</p><h2>NO SKIPS.<br>JUST VIBES.</h2><p>Try three original procedural drum loops. These are browser-generated rhythm demos, not recordings from real artists.</p><div class="radio-tracks"><button class="track-btn" data-beat="trap"><span class="play-symbol">▶</span><span><strong>01 — REDLINE</strong><small>TRAP / 140 BPM</small></span><span class="track-dur">LOOP</span></button><button class="track-btn" data-beat="rnb"><span class="play-symbol">▶</span><span><strong>02 — AFTER DARK</strong><small>R&B / 90 BPM</small></span><span class="track-dur">LOOP</span></button><button class="track-btn" data-beat="alt"><span class="play-symbol">▶</span><span><strong>03 — OFF GRID</strong><small>ALT HIP-HOP / 110 BPM</small></span><span class="track-dur">LOOP</span></button></div><p id="radioStatus" class="radio-status" role="status">SELECT A LOOP TO LISTEN</p></div></div>
-    </section>
+      <section class="page" id="radio" aria-labelledby="radioTitle">
+        <header class="page-masthead dark-masthead"><div class="masthead-meta"><span>05 / ON THE DIAL</span><span>TUNE IN / TURN UP</span></div><h1 id="radioTitle">808<br><em>RADIO.</em></h1><p>Some rough patterns from the ROOM 808 sound lab. Press play. Turn your speakers up. Repeat.</p></header>
+        <div class="radio-console">
+          <div class="deck-top"><span>ROOM 808 / CASSETTE DECK MK. 01</span><span class="radio-light"><i></i> SIGNAL READY</span></div>
+          <div class="deck-window"><span class="reel reel-left">✳</span><span class="deck-label">SIDE A<br><b>ROOM 808<br>DEMO TAPES</b><small>STEREO · 2026 · ATL</small></span><span class="reel reel-right">✳</span></div>
+          <div class="radio-tracks">
+            <button class="track-btn" data-beat="trap" type="button"><span class="play-symbol">▶</span><span class="track-number">001</span><span class="track-name">FULTON AFTER DARK</span><span class="track-style">TRAP / 140 BPM</span><b>↗</b></button>
+            <button class="track-btn" data-beat="rnb" type="button"><span class="play-symbol">▶</span><span class="track-number">002</span><span class="track-name">MISSED CALL AT 2AM</span><span class="track-style">R&B / 90 BPM</span><b>↗</b></button>
+            <button class="track-btn" data-beat="alt" type="button"><span class="play-symbol">▶</span><span class="track-number">003</span><span class="track-name">EIGHT-O-EIGHT</span><span class="track-style">ALT / 110 BPM</span><b>↗</b></button>
+          </div>
+          <div class="deck-bottom"><span id="radioStatus" aria-live="polite">SELECT A LOOP TO LISTEN</span><div class="meter"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+        </div>
+        <p class="radio-fine">THESE ARE ORIGINAL BROWSER-GENERATED DEMONSTRATION DRUM LOOPS, NOT RELEASED RECORDINGS.</p>
+      </section>
 
-    <section class="page" id="booking" aria-labelledby="bookingTitle">
-      <div class="interior-hero shell"><p class="eyebrow">05 / LOCK IT IN</p><h1 id="bookingTitle">YOUR NEXT<br><span>SESSION STARTS HERE.</span></h1><p>Set your room, date, and creative team. See your estimate before confirming.</p></div>
-      <div class="shell booking-layout"><div class="booking-card"><div class="form-top"><span class="eyebrow">SESSION BUILDER / 808</span><span class="step-badge">01 — 03</span></div><form id="bookingForm"><div class="form-grid"><label class="field">SELECT STUDIO<select name="room" id="roomSelect" required><option value="booth">ROOM B — THE BOOTH ($60/hr)</option><option value="red">ROOM A — THE RED ROOM ($90/hr)</option><option value="penthouse">ROOM C — THE PENTHOUSE ($125/hr)</option></select></label><label class="field">SESSION DURATION<select name="hours" id="hoursSelect" required><option value="2">2 HOURS</option><option value="3">3 HOURS</option><option value="4">4 HOURS</option><option value="6">6 HOURS</option></select></label><label class="field">DATE<input type="date" id="bookingDate" name="date" required /></label><label class="field">START TIME<select name="time" id="bookingTime" required><option value="10:00">10:00 AM</option><option value="12:00">12:00 PM</option><option value="14:00">2:00 PM</option><option value="16:00">4:00 PM</option><option value="18:00">6:00 PM</option><option value="20:00">8:00 PM</option></select></label><label class="field span-two">ADD A PRODUCER (OPTIONAL)<select name="producer" id="producerSelect"><option value="none">STUDIO ENGINEER ONLY — INCLUDED</option><option value="kai">KAI VICE — +$60/HR</option><option value="nova">NOVA BLU — +$55/HR</option><option value="mars">MARS 808 — +$50/HR</option><option value="juno">JUNO RAE — +$45/HR</option></select></label><label class="field">YOUR NAME<input name="name" id="customerName" type="text" placeholder="YOUR NAME" maxlength="90" autocomplete="name" required /></label><label class="field">EMAIL ADDRESS<input name="email" id="customerEmail" type="email" placeholder="YOU@EXAMPLE.COM" autocomplete="email" required /></label><label class="field span-two">NOTES FOR YOUR SESSION <span class="optional">OPTIONAL</span><textarea name="notes" rows="3" maxlength="700" placeholder="TELL US WHAT YOU'RE WORKING ON..."></textarea></label></div><div class="form-bottom"><div class="estimate"><span>ESTIMATED SESSION TOTAL</span><strong id="estimateTotal">$120</strong><small id="estimateDetails">2 hours × $60 room rate</small></div><button type="submit" class="btn btn-red">CONFIRM DEMO BOOKING <span>↗</span></button></div><p class="disclaimer">Prototype booking only. Reservations are saved in this browser, not sent to a real studio or shared calendar. No payment is collected.</p></form><div id="bookingFeedback" class="feedback" role="status" aria-live="polite" hidden></div></div><aside class="booking-aside"><div class="side-number">808<span>↗</span></div><h2>YOUR TIME.<br>YOUR TERMS.</h2><p>Choose the setup that fits the session. An engineer is included in every room booking. Add a producer for an extra creative push.</p><div class="booking-benefits"><div><span>01</span> ENGINEER INCLUDED</div><div><span>02</span> INSTANT PRICE ESTIMATE</div><div><span>03</span> DEMO BOOKING CONFIRMATION</div></div><a href="#echo" class="text-link">NOT SURE WHAT TO PICK? ASK ECHO ↗</a></aside></div>
-      <div class="shell session-section"><div class="inline-heading"><div><p class="eyebrow">YOUR BROWSER / DEMO</p><h2>MY SESSIONS.</h2></div><span id="sessionCount">0 SAVED</span></div><div id="sessionList" class="session-list"><p class="empty-state">No sessions yet. Build your first one above.</p></div></div>
-    </section>
+      <section class="page" id="echo" aria-labelledby="echoTitle">
+        <header class="page-masthead"><div class="masthead-meta"><span>06 / STUDIO INTELLIGENCE</span><span>DIAL ECHO ↗</span></div><h1 id="echoTitle">ASK<br><em>ECHO.</em></h1><p>Need to figure out the budget, the room, or who should make the beat? Start here.</p></header>
+        <div class="echo-workstation">
+          <div class="echo-note"><div class="note-corner">808/AI</div><span class="small-caps">YOUR PERSONAL SESSION RUNNER</span><h2>YOU BRING<br>THE QUESTION.<br><em>WE'LL FIND</em><br>THE START.</h2><p>Tell ECHO your genre, budget, hours, or what you're trying to record.</p><div class="note-bottom">* ON GITHUB PAGES ECHO OFFERS GUIDED DEMO ANSWERS. LIVE AI REQUIRES A CONFIGURED SERVER.</div></div>
+          <div class="chat-panel"><div class="chat-header"><span><i class="rec-dot"></i> ECHO / STUDIO DESK</span><span>MESSAGE THREAD 001</span></div><div id="chatMessages" class="chat-messages" aria-live="polite"><div class="chat-message bot"><span class="bubble-label">ECHO / 00:00</span><p>What's good? Tell me what you're trying to make. We'll figure out the room from there.</p></div></div><div class="suggestions"><button class="chip" type="button" data-prompt="I have a $200 budget. What session can I book?">$200 SESSION?</button><button class="chip" type="button" data-prompt="Which producer is best for R&B?">R&B PRODUCER?</button><button class="chip" type="button" data-prompt="What's included with the studio rooms?">ROOM DETAILS?</button></div><form id="chatForm" class="chat-form"><label class="sr-only" for="chatInput">Message ECHO</label><input id="chatInput" placeholder="Describe your next session..." maxlength="450" required autocomplete="off"><button type="submit">SEND ↗</button></form></div>
+        </div>
+      </section>
 
-    <section class="page" id="echo" aria-labelledby="echoTitle">
-      <div class="interior-hero shell"><p class="eyebrow">06 / YOUR DIGITAL RIGHT HAND</p><h1 id="echoTitle">MEET <span>ECHO.</span><br>YOUR STUDIO CONCIERGE.</h1><p>Ask about rooms, rates, producers, or what to book for your next session.</p></div>
-      <div class="shell echo-layout"><div class="echo-side"><div class="echo-orb-large" aria-hidden="true"><span>e</span></div><span class="eyebrow">THE INTELLIGENCE BEHIND THE SESSION</span><h2>LESS SEARCHING.<br>MORE CREATING.</h2><p>ECHO can guide you through the studio experience and help plan a session. This demo uses guided responses unless live AI credentials are configured.</p><div class="tag-row"><span>SESSION PLANNING</span><span>ROOM RECOMMENDATIONS</span><span>PRODUCER MATCHING</span></div></div><div class="chat-card"><div class="chat-header"><div class="bot-avatar">✦</div><div><strong>ECHO / ROOM 808</strong><small>STUDIO CONCIERGE · DEMO</small></div><span class="chat-online"><span class="live-dot"></span> ACTIVE</span></div><div class="chat-messages" id="chatMessages" aria-live="polite"><div class="chat-message bot"><span class="bubble-label">ECHO</span><p>Welcome to ROOM 808. I'm ECHO, your studio concierge. Tell me what you're working on, and I'll help you find your setup.</p></div></div><div class="chat-chips"><button type="button" class="chip" data-prompt="Which room is best for recording vocals?">VOCAL SESSIONS</button><button type="button" class="chip" data-prompt="I have a $250 budget. What can I book?">$250 BUDGET</button><button type="button" class="chip" data-prompt="Help me choose a producer for R&B">FIND A PRODUCER</button></div><form id="chatForm" class="chat-form"><label class="sr-only" for="chatInput">Ask ECHO a question</label><input id="chatInput" maxlength="450" placeholder="ASK ECHO ANYTHING ABOUT ROOM 808..." autocomplete="off" required /><button type="submit" aria-label="Send message">↗</button></form><div class="chat-disclaimer">DEMO RESPONSES · LIVE AI REQUIRES API CONFIGURATION · NO REAL RESERVATIONS</div></div></div>
-    </section>
+      <section class="page" id="about" aria-labelledby="aboutTitle">
+        <header class="page-masthead"><div class="masthead-meta"><span>07 / THE BACKSTORY</span><span>AN IMAGINED PLACE</span></div><h1 id="aboutTitle">THE ROOM<br><em>IS YOURS.</em></h1><p>A fictional studio brand born from the idea that a city can have a thousand sounds and every one deserves space.</p></header>
+        <div class="about-layout"><div class="about-poster"><span>ROOM 808 / ATL / 2026</span><div class="about-eight">808</div><strong>SOUND<br>IS NOT<br>ONE SIZE<br>FITS ALL.</strong><span>✳ MAKE SOMETHING THAT LASTS</span></div><div class="about-copy"><span class="small-caps">A BETTER KIND OF STUDIO STORY</span><h2>BUILT FOR THE<br><em>UNFINISHED.</em></h2><p>ROOM 808 imagines a studio that feels more like a creative home than a rented hour. A place for last-minute ideas, arguments over a snare sound, and the one take you keep playing back.</p><p>The name is a nod to the 808 — a drum sound that became part of the language of hip-hop, especially in Atlanta.</p><div class="about-facts"><span>ATLANTA-INSPIRED</span><span>ARTIST-FIRST</span><span>FICTIONAL CONCEPT</span></div><a class="tape-button" href="#booking">STEP INSIDE ↗</a></div></div>
+        <div class="faq"><span class="small-caps">SMALL PRINT / GOOD QUESTIONS</span><details><summary>Is ROOM 808 a real studio?</summary><p>No. ROOM 808 is a fictional portfolio project. All rooms, producers, prices, and booking flows are demonstrations.</p></details><details><summary>Can I actually reserve a session?</summary><p>You can try the booking interface and save a demo reservation on your own device. It doesn't reserve a real studio, process a payment, or check a shared calendar.</p></details><details><summary>Is ECHO really powered by AI?</summary><p>The GitHub Pages edition uses built-in guided responses. A server-hosted edition can use an AI API when separately configured.</p></details></div>
+      </section>
 
-    <section class="page" id="about" aria-labelledby="aboutTitle">
-      <div class="interior-hero shell"><p class="eyebrow">07 / BEHIND THE SOUND</p><h1 id="aboutTitle">BUILT FOR<br><span>WHAT'S NEXT.</span></h1><p>More than four walls. A creative home for artists who make their own lane.</p></div>
-      <div class="shell about-layout"><div class="about-photo"><span>ROOTED IN ATLANTA. WIRED FOR EVERYWHERE.</span></div><div class="about-copy"><p class="eyebrow">THE ROOM 808 STORY</p><h2>CREATIVITY<br>DOESN'T CLOCK OUT.</h2><p>ROOM 808 is a fictional studio concept inspired by the creative energy and boundary-pushing sound of Atlanta's hip-hop community.</p><p>Our imagined space brings together high-end recording rooms, forward-thinking producers, and helpful technology in one seamless artist experience.</p><div class="about-meta"><span>HOME BASE <strong>ATLANTA, GA</strong></span><span>FOUNDED <strong>CONCEPT / 2026</strong></span><span>MISSION <strong>MAKE SPACE FOR SOUND</strong></span></div><a href="#booking" class="btn btn-red">COME MAKE SOMETHING ↗</a></div></div>
-      <div class="shell faq"><p class="eyebrow">GOOD TO KNOW</p><h2>THE DETAILS.</h2><details><summary>Is ROOM 808 a real recording studio? <span>+</span></summary><p>Not yet. ROOM 808 is a fictional brand and interactive website concept, created to demonstrate a premium artist experience.</p></details><details><summary>Can I make a real reservation? <span>+</span></summary><p>Bookings on this demo are saved locally in your browser. There is no real room inventory, payment processing, or shared database.</p></details><details><summary>Is ECHO using live artificial intelligence? <span>+</span></summary><p>ECHO offers guided demo answers now, with an optional server endpoint ready for an AI provider key. It does not access live room availability.</p></details><details><summary>Are the producers real? <span>+</span></summary><p>All listed producers and engineers are fictional profiles designed to illustrate the studio experience.</p></details></div>
-    </section>
-  </main>
-  <footer class="footer"><div class="shell"><div class="footer-top"><div><div class="footer-brand">ROOM<span>808</span><b>✳</b></div><p>WHERE SOUND TAKES SHAPE.</p></div><div class="footer-links"><a href="#studios">STUDIOS</a><a href="#producers">PRODUCERS</a><a href="#services">SERVICES</a><a href="#booking">BOOKING</a><a href="#echo">ECHO AI</a></div></div><div class="footer-bottom"><span>© 2026 ROOM 808 — FICTIONAL STUDIO WEBSITE CONCEPT</span><span>ATLANTA INSPIRED / BUILT FOR CREATORS</span><a href="#home">BACK TO TOP ↑</a></div></div></footer>
+      <section class="page" id="booking" aria-labelledby="bookingTitle">
+        <header class="page-masthead booking-masthead"><div class="masthead-meta"><span>08 / RESERVATION DESK</span><span>YOUR NEXT TAKE STARTS HERE</span></div><h1 id="bookingTitle">LOCK IN<br><em>A SESSION.</em></h1><p>Pick the room, your people, and how long you need. We'll put the details on a session ticket.</p></header>
+        <div class="booking-layout">
+          <div class="booking-sheet"><div class="booking-sheet-head"><span>FORM 808 / 001</span><span>SESSION REQUEST / DEMO</span></div><form id="bookingForm">
+            <div class="form-row"><label>THE ROOM<select id="roomSelect" name="room" required><option value="booth">ROOM B / THE BOOTH — $60/HR</option><option value="red">ROOM A / THE RED ROOM — $90/HR</option><option value="penthouse">ROOM C / THE PENTHOUSE — $125/HR</option></select></label><label>HOURS<select id="hoursSelect" name="hours" required><option value="1">1 HOUR</option><option value="2" selected>2 HOURS</option><option value="3">3 HOURS</option><option value="4">4 HOURS</option><option value="6">6 HOURS</option><option value="8">8 HOURS</option></select></label></div>
+            <div class="form-row"><label>DATE<input type="date" id="bookingDate" name="date" required></label><label>START TIME<select id="bookingTime" name="time" required><option value="09:00">09:00 AM</option><option value="10:00">10:00 AM</option><option value="11:00">11:00 AM</option><option value="12:00">12:00 PM</option><option value="13:00">01:00 PM</option><option value="14:00">02:00 PM</option><option value="15:00">03:00 PM</option><option value="16:00">04:00 PM</option><option value="17:00">05:00 PM</option><option value="18:00">06:00 PM</option><option value="19:00">07:00 PM</option><option value="20:00">08:00 PM</option><option value="21:00">09:00 PM</option><option value="22:00">10:00 PM</option></select></label></div>
+            <div class="form-row single"><label>WHO'S ON THE SESSION?<select id="producerSelect" name="producer"><option value="none">STUDIO ENGINEER (INCLUDED)</option><option value="kai">KAI VICE (+$60/HR)</option><option value="nova">NOVA BLU (+$55/HR)</option><option value="mars">MARS 808 (+$50/HR)</option><option value="juno">JUNO RAE (+$45/HR)</option></select></label></div>
+            <div class="form-row"><label>YOUR NAME<input id="customerName" name="customerName" type="text" placeholder="ARTIST / CONTACT NAME" required maxlength="100"></label><label>YOUR EMAIL<input id="customerEmail" name="customerEmail" type="email" placeholder="YOU@EXAMPLE.COM" required maxlength="150"></label></div>
+            <div class="form-row single"><label>SESSION NOTES (OPTIONAL)<textarea name="notes" placeholder="WHAT ARE WE MAKING?" rows="3" maxlength="700"></textarea></label></div>
+            <button type="submit" class="slab-button submit-book"><span>SAVE DEMO SESSION</span><b>↗</b></button>
+            <div id="bookingFeedback" class="booking-feedback" hidden aria-live="polite"></div>
+            <p class="booking-footnote">FOR CONCEPT TESTING ONLY. SAVED IN THIS BROWSER. NO PAYMENT, SHARED AVAILABILITY, OR REAL RESERVATION.</p>
+          </form></div>
+          <div class="booking-side"><div class="receipt"><div class="receipt-head"><span>ROOM 808</span><span>ESTIMATE / NO. 001</span></div><span class="receipt-mini">SESSION TOTAL</span><div id="estimateTotal" class="receipt-total">$120</div><p id="estimateDetails">2 hours × $60 room</p><div class="receipt-rule"></div><div class="receipt-lines"><span>STUDIO ENGINEER</span><b>INCLUDED</b></div><div class="receipt-lines"><span>STATUS</span><b>DEMO ONLY</b></div><div class="barcode" aria-hidden="true"></div><span class="receipt-bottom">NOT A PAYMENT RECEIPT • 808</span></div><div class="saved-sessions"><div class="saved-head"><h2>YOUR SESSION LOG</h2><span id="sessionCount">0 SAVED</span></div><div id="sessionList"><p class="empty-state">No sessions saved yet.</p></div></div></div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer"><div class="footer-topline"><span>ROOM 808 / ATLANTA</span><span>AN IMAGINED HOME FOR REAL IDEAS.</span></div><a href="#home" class="footer-logo">808<span>✳</span></a><div class="footer-bottomline"><span>© 2026 ROOM 808 — FICTIONAL STUDIO CONCEPT</span><span>MAKE IT LOUD. MAKE IT YOURS.</span><a href="#booking">BOOK A DEMO SESSION ↗</a></div></footer>
+  </div>
+</div>
 </body>
 </html>
